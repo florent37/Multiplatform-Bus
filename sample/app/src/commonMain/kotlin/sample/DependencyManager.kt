@@ -1,7 +1,5 @@
 package sample
 
-import com.github.florent37.bus.Bus
-
 class DependencyManager {
 
     val bus by lazy { Bus.getDefault() }
