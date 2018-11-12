@@ -10,7 +10,7 @@ bintray {
 
         userOrg = 'florent37'
         repo = 'maven'
-        name = "multiplatform-log"
+        name = "multiplatform-bus"
         licenses = ['Apache-2.0']
         publications = ['mavenProject']
 

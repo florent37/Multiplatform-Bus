@@ -1,5 +1,52 @@
 # Multiplatform Bus
 
+Kotlin event-bus compatible with Android & iOS
+
+```
+val bus = Bus.getDefault()
+
+//register to a message
+bus.addObserver<Boolean>(this, "my_message_key") { value ->
+      
+}
+
+//send a message
+bus.post("my_message_key", true)
+```
+
+# Download
+
+Add the repository
+```groovy
+repositories {
+    maven { url  "https://dl.bintray.com/florent37/maven" }
+}
+```
+
+## common
+
+ [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-log/_latestVersion)
+
+```groovy
+implementation "com.gitub.florent37:multiplatform-bus:0.0.2"
+```
+
+## ios
+
+ [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-log/_latestVersion)
+
+```groovy
+implementation "com.gitub.florent37:multiplatform-bus-ios:0.0.2"
+```
+
+## android
+
+ [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-log/_latestVersion)
+
+```groovy
+implementation "com.gitub.florent37:multiplatform-bus-android:0.0.2"
+```
+
 ## License
         
     Copyright 2018 Florent37
