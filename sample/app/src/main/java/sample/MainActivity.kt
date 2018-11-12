@@ -2,24 +2,31 @@ package sample
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.github.florent37.livedata.observe
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MainView {
 
-    private val viewmodel by lazy { dependencies.mainViewmodel }
+    private val mainPresenter by lazy { dependencies.mainPresenter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewmodel.viewState().observe(this){
-            userStatus.text = it.userStatus
-        }
+        mainPresenter.bind(this)
+        mainPresenter.start()
 
         premiumButton.setOnClickListener {
-            viewmodel.becomePremium()
+            mainPresenter.becomePremium()
         }
+    }
+
+    override fun onDestroy() {
+        mainPresenter.unbind()
+        super.onDestroy()
+    }
+
+    override fun displayUserStatus(status: String) {
+        userStatus.text = status
     }
 
 

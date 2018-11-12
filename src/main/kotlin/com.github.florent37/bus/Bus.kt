@@ -52,7 +52,7 @@ open class Bus() {
     fun <T> addObserver(observer: Any, key: String, block: (T) -> Unit) {
         val function: ((Any) -> Unit)? = block as? (Any) -> Unit
         function?.let {
-            keyObservers[key]?.add(observer, function)
+            keyObservers.getOrPut(key){ KeyObservers() }.add(observer, function)
         }
     }
 

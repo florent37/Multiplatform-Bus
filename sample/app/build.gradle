@@ -12,7 +12,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "org.jetbrains.kotlin.mpp_app_android"
+        applicationId "com.github.florent37.kotlin.bus.sample"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
@@ -48,13 +48,13 @@ kotlin {
     sourceSets {
 
         def logsDataVersion = "1.0.0"
-        def liveDataVersion = "0.0.4"
+        def busVersion = "0.0.2"
 
         commonMain {
             dependencies {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib-common'
                 implementation "com.github.florent37:multiplatform-log:$logsDataVersion"
-                implementation "com.github.florent37:multiplatform-livedata:$liveDataVersion"
+                implementation "com.github.florent37:multiplatform-bus:$busVersion"
             }
         }
         commonTest {
@@ -67,7 +67,7 @@ kotlin {
             dependencies {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib'
                 implementation "com.github.florent37:multiplatform-log-android:$logsDataVersion"
-                implementation "com.github.florent37:multiplatform-livedata-android:$liveDataVersion"
+                implementation "com.github.florent37:multiplatform-bus-android:$busVersion"
             }
         }
         androidTest {
@@ -79,7 +79,7 @@ kotlin {
         iosMain {
             dependencies {
                 implementation "com.github.florent37:multiplatform-log-ios:$logsDataVersion"
-                implementation "com.github.florent37:multiplatform-livedata-ios:$liveDataVersion"
+                implementation "com.github.florent37:multiplatform-bus-ios:$busVersion"
             }
         }
         iosTest {

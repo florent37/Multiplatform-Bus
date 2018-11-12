@@ -1,9 +1,13 @@
 package sample
 
+import com.github.florent37.bus.Bus
+
 class DependencyManager {
 
-    val premiumManager by lazy { PremiumManager() }
+    val bus by lazy { Bus.getDefault() }
 
-    val mainViewmodel by lazy { MainViewModel(premiumManager) }
+    val premiumManager by lazy { PremiumManager(bus) }
+
+    fun mainPresenter() = MainPresenter(premiumManager, bus)
 
 }

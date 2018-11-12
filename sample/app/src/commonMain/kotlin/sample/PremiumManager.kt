@@ -1,20 +1,21 @@
 package sample
 
-import com.github.florent37.livedata.KLiveData
-import com.github.florent37.livedata.KMutableLiveData
+import com.github.florent37.bus.Bus
+import com.github.florent37.log.Logger
 
-class PremiumManager {
-    private val premium = KMutableLiveData<Boolean>()
-    fun premium() : KLiveData<Boolean> {
-        return premium
-    }
+class PremiumManager(private val bus: Bus) {
+
+    private val TAG = "Main-PremiumManager"
+
+    var premium = false
+        private set(value) {
+            field = value
+            Logger.d(TAG, "premium = true")
+            bus.post(Messages.PREMIUM, value)
+        }
 
     fun becomePremium() {
-        premium.value = true
+        premium = true
     }
 
-    init {
-        //default value
-        premium.value = false
-    }
 }
