@@ -48,7 +48,7 @@ kotlin {
     sourceSets {
 
         def logsDataVersion = "1.0.0"
-        def busVersion = "0.0.3"
+        def busVersion = "0.0.4"
 
         commonMain {
             dependencies {
