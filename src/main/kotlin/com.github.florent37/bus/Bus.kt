@@ -1,7 +1,7 @@
 package com.github.florent37.bus
 
 internal class ObserverFunctions<T> {
-    private val functions = mutableListOf<(T) -> Unit>()
+    private var functions = mutableListOf<(T) -> Unit>()
 
     internal fun add(block: (T) -> Unit) {
         functions.add(block)
@@ -19,7 +19,7 @@ internal class ObserverFunctions<T> {
 }
 
 internal class KeyObservers<T : Any> {
-    private val observers = mutableMapOf<Any, ObserverFunctions<T>>()
+    private var observers = mutableMapOf<Any, ObserverFunctions<T>>()
 
     fun add(observer: Any, block: (T) -> Unit) {
 
@@ -49,7 +49,7 @@ open class Bus() {
         fun getDefault() = DefaultBus
     }
 
-    private val keyObservers = mutableMapOf<String, KeyObservers<Any>>()
+    private var keyObservers = mutableMapOf<String, KeyObservers<Any>>()
 
     fun post(key: String, value: Any) {
         keyObservers[key]?.ping(value)
