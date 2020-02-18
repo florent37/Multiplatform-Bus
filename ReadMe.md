@@ -28,7 +28,7 @@ repositories {
  [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-log/_latestVersion)
 
 ```groovy
-implementation "com.gitub.florent37:multiplatform-bus:0.0.2"
+implementation "com.github.florent37:multiplatform-bus:0.0.2"
 ```
 
 ## ios
