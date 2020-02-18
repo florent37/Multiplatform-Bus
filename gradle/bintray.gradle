@@ -16,6 +16,7 @@ bintray {
             name = project.version
             released = new Date()
             vcsTag = project.version
+            vcsUrl = project.projectGithubUrl
 
             gpg {
                 sign = true //Determines whether to GPG sign the files. The default is false
