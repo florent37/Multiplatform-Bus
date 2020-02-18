@@ -25,7 +25,7 @@ repositories {
 
 ## common
 
- [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-log/_latestVersion)
+ [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-bus/_latestVersion)
 
 ```groovy
 implementation "com.github.florent37:multiplatform-bus:0.0.2"
@@ -33,7 +33,7 @@ implementation "com.github.florent37:multiplatform-bus:0.0.2"
 
 ## ios
 
- [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-log/_latestVersion)
+ [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-bus/_latestVersion)
 
 ```groovy
 implementation "com.gitub.florent37:multiplatform-bus-ios:0.0.2"
@@ -41,7 +41,7 @@ implementation "com.gitub.florent37:multiplatform-bus-ios:0.0.2"
 
 ## android
 
- [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-log/_latestVersion)
+ [ ![Download](https://api.bintray.com/packages/florent37/maven/multiplatform-bus/images/download.svg) ](https://bintray.com/florent37/maven/multiplatform-bus/_latestVersion)
 
 ```groovy
 implementation "com.gitub.florent37:multiplatform-bus-android:0.0.2"
