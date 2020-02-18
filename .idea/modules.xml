@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Multiplatform-Bus-multiplatform-bus.iml" filepath="$PROJECT_DIR$/Multiplatform-Bus-multiplatform-bus.iml" />
       <module fileurl="file://$PROJECT_DIR$/multiplatform-bus.iml" filepath="$PROJECT_DIR$/multiplatform-bus.iml" />
       <module fileurl="file://$PROJECT_DIR$/multiplatform-bus-android/multiplatform-bus-android.iml" filepath="$PROJECT_DIR$/multiplatform-bus-android/multiplatform-bus-android.iml" />
       <module fileurl="file://$PROJECT_DIR$/multiplatform-bus-ios/multiplatform-bus-ios.iml" filepath="$PROJECT_DIR$/multiplatform-bus-ios/multiplatform-bus-ios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiplatform-bus_commonMain.iml" filepath="$PROJECT_DIR$/multiplatform-bus_commonMain.iml" group="multiplatform-bus" />
+      <module fileurl="file://$PROJECT_DIR$/multiplatform-bus_commonTest.iml" filepath="$PROJECT_DIR$/multiplatform-bus_commonTest.iml" group="multiplatform-bus" />
+      <module fileurl="file://$PROJECT_DIR$/multiplatform-bus_iosArm64Main.iml" filepath="$PROJECT_DIR$/multiplatform-bus_iosArm64Main.iml" group="multiplatform-bus" />
+      <module fileurl="file://$PROJECT_DIR$/multiplatform-bus_iosArm64Test.iml" filepath="$PROJECT_DIR$/multiplatform-bus_iosArm64Test.iml" group="multiplatform-bus" />
+      <module fileurl="file://$PROJECT_DIR$/multiplatform-bus_iosMain.iml" filepath="$PROJECT_DIR$/multiplatform-bus_iosMain.iml" group="multiplatform-bus" />
+      <module fileurl="file://$PROJECT_DIR$/multiplatform-bus_iosTest.iml" filepath="$PROJECT_DIR$/multiplatform-bus_iosTest.iml" group="multiplatform-bus" />
+      <module fileurl="file://$PROJECT_DIR$/multiplatform-bus_iosX64Main.iml" filepath="$PROJECT_DIR$/multiplatform-bus_iosX64Main.iml" group="multiplatform-bus" />
+      <module fileurl="file://$PROJECT_DIR$/multiplatform-bus_iosX64Test.iml" filepath="$PROJECT_DIR$/multiplatform-bus_iosX64Test.iml" group="multiplatform-bus" />
     </modules>
   </component>
 </project>
